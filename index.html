@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="confetti"></canvas>
+
+  <main class="hero">
+    <div class="card">
+      <p class="eyebrow">A little birthday surprise</p>
+      <h1>Happy Birthday, <span id="name">Friend</span>!</h1>
+      <p class="message">
+        Wishing you a day full of laughter, cake, and beautiful memories.
+        Keep shining and keep building amazing things.
+      </p>
+
+      <div class="cake" aria-label="Birthday cake illustration">
+        <div class="candle">
+          <div class="flame"></div>
+        </div>
+        <div class="layer top"></div>
+        <div class="layer middle"></div>
+        <div class="layer bottom"></div>
+        <div class="plate"></div>
+      </div>
+
+      <div class="actions">
+        <input id="nameInput" type="text" placeholder="Enter name" maxlength="20" />
+        <button id="celebrateBtn">Celebrate</button>
+      </div>
+    </div>
+
+    <section class="balloons" aria-hidden="true">
+      <div class="balloon red"></div>
+      <div class="balloon blue"></div>
+      <div class="balloon yellow"></div>
+      <div class="balloon green"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
